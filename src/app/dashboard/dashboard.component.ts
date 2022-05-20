@@ -10,12 +10,14 @@ import { LogoutLaravelService } from '../service/logout-laravel.service';
 export class DashboardComponent implements OnInit {
 
   constructor(public servc: LogoutLaravelService, private router: Router) { }
+
   NameUser: any;
   InfoUser :any;
   ngOnInit(): void {
     this.NameUser =localStorage.getItem('InfoUser');
     console.log("infouser",this.NameUser );
   }
+  
   LogoutUser():void{
    let token =localStorage.getItem('tokenUser');
    this.servc.logoutUser(token).subscribe((r) => {

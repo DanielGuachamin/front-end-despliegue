@@ -8,7 +8,7 @@ import { Ward } from './Wards';
 })
 export class ClientelaravelService {
 
-  wardsUrl: string = "http://proyectocarcel.herokuapp.com/api/wards"
+  wardsUrl: string = "https://proyectocarcel.herokuapp.com/api/wards"
   constructor(private httpc: HttpClient) { }
 
   getWards(): Observable<Ward[]> {

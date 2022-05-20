@@ -6,7 +6,7 @@ import { Injectable } from '@angular/core';
   providedIn: 'root'
 })
 export class LogoutLaravelService {
-  logoutUrl: string = "http://proyectocarcel.herokuapp.com/api/logout"
+  logoutUrl: string = "https://proyectocarcel.herokuapp.com/api/logout"
   constructor(private httpc: HttpClient) { }
   logoutUser(token: any) {
    let tokenBearer='Bearer ' + token;

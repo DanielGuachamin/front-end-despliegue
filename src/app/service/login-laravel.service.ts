@@ -6,7 +6,7 @@ import { UserLogin } from './UserLogin';
   providedIn: 'root'
 })
 export class LoginLaravelService {
-  loginUrl: string = "http://proyectocarcel.herokuapp.com/api/login"
+  loginUrl: string = "https://proyectocarcel.herokuapp.com/api/login"
   constructor(private httpc: HttpClient) { }
   loginUser(login_field: string, password: string) {
 
